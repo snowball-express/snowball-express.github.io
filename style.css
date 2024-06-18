@@ -18,7 +18,7 @@
       .content {
        display: flex;
         color: #A0C4E2;
-          font-size: 10px;
+         
     
       }
 
@@ -30,7 +30,15 @@
         justify-content: space-between;
         align-items: center;
       }
+    
+    
       .leftcontainer {
-        padding: 20px
-        line-height: 30px
+        padding: 20px;
+        line-height: 30px;
       }
+
+      .headline {
+          font-size: 20px;
+      }
+
+    
