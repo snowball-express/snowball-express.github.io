@@ -1,15 +1,15 @@
-    button {
+    .button {
         background: none;
         border: none;
         font-size: 20px;
         color: #122A40;
         
       }
-      button:hover {
+      .button:hover {
         color: #877B66;
       }
 
-      body { 
+      .body { 
         margin: 0;
         background-color: #122A40;
         color: #A0C4E2;
