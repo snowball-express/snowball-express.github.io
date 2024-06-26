@@ -1,4 +1,16 @@
- button {
+.home{
+      display: flex;
+}
+
+.kundenmeinungen {
+display: none;
+}
+
+.bestellen {
+ display: none;
+}
+
+button {
       background: none;
       border: none;
       font-size: 20px;
