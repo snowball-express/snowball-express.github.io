@@ -1,107 +1,50 @@
-<html>
+.home {
+  display: flex;
+}
 
-  <head>
-    <title>
-      Snowball-Express
-    </title>
-    <link rel="stylesheet" href="style.css">
+.kundenmeinungen {
+  display: none;
+}
 
-  </head>
+.bestellen {
+  display: none;
+}
 
-  <body>
-    <script>
-      var Nachricht = "Achtung! Diese Website hat sehr gefährliche Viren, wollen Sie trotzdem fortfahren?"
-      alert(Nachricht)
+button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #122A40;
 
-    </script>
+}
 
+button:hover {
+  color: #877B66;
+}
 
-    <div class="navi">
-      <img src="bilder/logo.webp" alt="" height=80px width=80px>
+body {
+  margin: 0;
+  background-color: #122A40;
+  color: #A0C4E2;
 
-      <div class="buttoncontainer">
-        <button onclick="showHome()">Home</button>
-        <button onclick="showKundenmeinungen()">Kundenmeinungen</button>
-        <button onclick="showBestellen()">Bestellen</button>
+}
 
-        <a href="https://Atlantica1.github.io/">Das beste Hotel der Welt!</a>
+.content {
+  display: flex;
+  color: #A0C4E2;
 
-        </button>
-        <button>
-          <a href="https://tigerlilia764.github.io/">Wunder geschehen...</a>
+}
 
-        </button>
-        <button>
-          <a href="https://katzencleo123.github.io/">Catspective</a>
-        </button>
-        <button>
-          <a href="pinguin78.github.io/">Das süßeste Hotel der Welt!</a>
-        </button>
-      </div>
+.navi {
+  background-color: #A0C4E2;
+  padding: 15px;
+  color: #122A40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    </div>
-
-    <div class="content">
-      <section class="home">
-        <div class="leftcontainer">
-          <h1>
-            Wilkommen auf der Seite für proffesionelle Schneeball-Lieferung
-          </h1>
-          <p>
-            Sehnen Sie sich nach Schneeballschlachten auch im Sommer? Mit unseren qualitativ hochwertigen, umweltfreundlichen Schneebällen ist das jetzt möglich! Perfekt für Partys, Events oder einfach nur zum Spaß – unsere Schneebälle sorgen das ganze Jahr für Begeisterung.
-            Für ihre erste Bestellung kriegen sie sogar 50% Rabatt!!!
-            Holen Sie sich also Schneebälle bevor sie geschmolzen sind!!!
-
-          </p>
-        </div>
-        <img src="bilder/schneeball.webp" alt="" height=700px width=700px>
-      </section>
-
-      <section class="kundenmeinungen">
-      <h3>
-      Kundenmeinungen
-      </h3>
-    
-      </section>
-
-      <section class="bestellen">
-      <h2>
-      Hier bestllen sie unseren hochqualitativen Schnee
-      </h2>
-      </section>
-    </div>
-
-    <script>
-      function showHome() {
-        var HomeSection = document.querySelector(".home");
-        HomeSection.style.display = "flex";
-        var KundenmeinungenSection = document.querySelector(".kundenmeinungen");
-        KundenmeinungenSection.style.display = "none";
-        var BestellenSection = document.querySelector(".bestellen")
-        BestellenSection.style.display = "none";
-      }
-
-      function showKundenmeinungen() {
-        var HomeSection = document.querySelector(".home");
-        HomeSection.style.display = "none";
-        var KundenmeinungenSection = document.querySelector(".kundenmeinungen");
-        KundenmeinungenSection.style.display = "flex";
-        var BestellenSection = document.querySelector(".bestellen")
-        BestellenSection.style.display = "none";
-      }
-
-      function showBestellen() {
-        var HomeSection = document.querySelector(".home");
-        HomeSection.style.display = "none";
-        var KundenmeinungenSection = document.querySelector(".kundenmeinungen");
-        KundenmeinungenSection.style.display = "none";
-        var BestellenSection = document.querySelector(".bestellen")
-        BestellenSection.style.display = "flex";
-      }
-
-    </script>
-
-  </body>
-
-</html>
-
+.leftcontainer {
+  padding: 50px;
+  line-height: 30px;
+}
