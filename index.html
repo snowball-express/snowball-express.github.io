@@ -20,20 +20,20 @@
       <img src="bilder/logo.webp" alt="" height=80px width=80px>
 
       <div class="buttoncontainer">
-        <button>Home</button>
-        <button>Kundenmeinungen</button>
-        <button>Bestellen</button>
-        <button>Über uns<button>
-            <a href="https://Atlantica1.github.io/">Das beste Hotel der Welt!</a>
+        <button onclick="showHome()">Home</button>
+        <button onclick="showKundenmeinungen()">Kundenmeinungen</button>
+        <button onclick="showBestellen()">Bestellen</button>
 
-          </button>
-          <button>
-            <a href="https://tigerlilia764.github.io/">Wunder geschehen...</a>
+        <a href="https://Atlantica1.github.io/">Das beste Hotel der Welt!</a>
 
-          </button>
-          <button>
-            <a href="https://katzencleo123.github.io/">Catspective</a>
-          </button>
+        </button>
+        <button>
+          <a href="https://tigerlilia764.github.io/">Wunder geschehen...</a>
+
+        </button>
+        <button>
+          <a href="https://katzencleo123.github.io/">Catspective</a>
+        </button>
         <button>
           <a href="pinguin78.github.io/">Das süßeste Hotel der Welt!</a>
         </button>
@@ -58,17 +58,51 @@
       </section>
 
       <section class="kundenmeinungen">
-        1000000000000/10 Sterne ultra geil ich schwör auf big mac
+      <h3>
+      Kundenmeinungen
+      </h3>
+    
       </section>
 
       <section class="bestellen">
-        Hier bestellt man dann i guess
+      <h2>
+      Hier bestllen sie unseren hochqualitativen Schnee
+      </h2>
       </section>
     </div>
+
+    <script>
+      function showHome() {
+        var HomeSection = document.querySelector(".home");
+        HomeSection.style.display = "flex";
+        var KundenmeinungenSection = document.querySelector(".kundenmeinungen");
+        KundenmeinungenSection.style.display = "none";
+        var BestellenSection = document.querySelector(".bestellen")
+        BestellenSection.style.display = "none";
+      }
+
+      function showKundenmeinungen() {
+        var HomeSection = document.querySelector(".home");
+        HomeSection.style.display = "none";
+        var KundenmeinungenSection = document.querySelector(".kundenmeinungen");
+        KundenmeinungenSection.style.display = "flex";
+        var BestellenSection = document.querySelector(".bestellen")
+        BestellenSection.style.display = "none";
+      }
+
+      function showBestellen() {
+        var HomeSection = document.querySelector(".home");
+        HomeSection.style.display = "none";
+        var KundenmeinungenSection = document.querySelector(".kundenmeinungen");
+        KundenmeinungenSection.style.display = "none";
+        var BestellenSection = document.querySelector(".bestellen")
+        BestellenSection.style.display = "flex";
+      }
+
+    </script>
 
   </body>
 
 </html>
-
 
 
